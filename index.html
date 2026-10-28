@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#edf5e9">
+  <meta name="description" content="Лапусик — зоосалон в центре Москвы. Стрижка, купание, вычёсывание и другие услуги груминга. Запись: +7 (000) 000-00-00.">
+  <title>Лапусик — груминг в Москве</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Manrope-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="brand-mark" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16c6-5 18-5 24 0l3 19c1 12-5 19-15 19S16 47 17 35Zm0 0C15 15 8 25 8 36c0 5 6 7 10 2m26-22c5-1 12 9 12 20 0 5-6 7-10 2"/><path d="M24 32v1m16-1v1m-8 8v5"/></g><path d="M28 39c0-3 8-3 8 0 0 2-4 5-4 5s-4-3-4-5Z" fill="currentColor"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="scissors" viewBox="0 0 80 80"><circle cx="20" cy="57" r="11"/><circle cx="57" cy="57" r="11"/><path d="m28 49 35-36M49 49 15 13m23 27 5 5"/></symbol>
+    <symbol id="bath" viewBox="0 0 80 80"><path d="M9 42h62M14 43l5 20h41l6-20M25 64v6m29-6v6M20 41V19c0-12 17-12 17 0v4m-7 0h14M33 30v3m8-3v3"/><circle cx="53" cy="34" r="4"/><circle cx="62" cy="23" r="6"/></symbol>
+    <symbol id="paw-care" viewBox="0 0 80 80"><ellipse cx="18" cy="30" rx="6" ry="8" transform="rotate(-25 18 30)"/><ellipse cx="33" cy="21" rx="6" ry="8" transform="rotate(-8 33 21)"/><ellipse cx="49" cy="21" rx="6" ry="8" transform="rotate(8 49 21)"/><ellipse cx="63" cy="30" rx="6" ry="8" transform="rotate(25 63 30)"/><path d="M22 55c0-6 6-10 10-16a10 10 0 0 1 16 0c4 6 10 10 10 16 0 8-9 10-18 6-9 4-18 2-18-6Z"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <div class="header-shell">
+    <header class="header wrap">
+      <a href="#" class="brand" aria-label="Лапусик — на главную"><svg class="brand-paw" viewBox="0 0 64 64" aria-hidden="true"><use href="#brand-mark"/></svg><span class="brand-wordmark">лапусик<span class="brand-dot">.</span><span class="brand-tagline">зоосалон с заботой</span></span></a>
+      <nav class="nav" id="navigation" aria-label="Основная навигация"><a href="#services">Услуги и цены</a><a href="#about">О салоне</a><a href="#contacts">Как нас найти</a></nav>
+      <a href="tel:+70000000000" class="header-call">Позвонить <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Открыть меню"><span></span><span></span></button>
+    </header>
+  </div>
+  <main id="main">
+    <div class="hero-shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Счастливые лапки.<br><span>Ухоженные хвосты.</span></h1>
+        <div class="hero-tools" aria-hidden="true">
+          <div class="tool-place tool-scissors"><svg><use href="#scissors"/></svg></div>
+          <div class="tool-place tool-bath"><svg><use href="#bath"/></svg></div>
+        </div>
+        <div class="hero-pets" aria-label="Наши пушистые друзья">
+          <div class="pet-column pet-pug"><img src="assets/pug.png" alt="Мопс в зелёной бандане" width="1024" height="1024" fetchpriority="high"></div>
+          <div class="pet-column pet-cavalier"><img src="assets/cavalier.png" alt="Кавалер-кинг-чарльз-спаниель в голубой бандане" width="1024" height="1024" fetchpriority="high"></div>
+          <div class="pet-column pet-ragdoll"><img src="assets/ragdoll.png" alt="Пушистая кошка рэгдолл с голубыми глазами" width="1024" height="1024" fetchpriority="high"></div>
+        </div>
+      </section>
+      <section class="hero-band" aria-label="Запись и информация о салоне">
+        <div class="band-left"><svg class="outline-icon"><use href="#pin"/></svg><div><span class="small-label">ЖДЁМ В ГОСТИ</span><p>Центр города</p><span>Москва</span></div></div>
+        <div class="band-center"><p>Пора навести красоту?</p><a class="button button-blue" href="tel:+70000000000"><span class="button-label-desktop">Записаться по телефону</span><span class="button-label-mobile">Записаться</span><span class="button-circle"><svg><use href="#arrow"/></svg></span></a><span class="band-caption">По предварительной записи</span></div>
+        <div class="band-right"><div class="rating">4,9 <span aria-label="звёзд">★</span></div><p>124 оценки</p><span class="text-link">Отзывы гостей</span></div>
+      </section>
+    </div>
+  <section class="services section wrap" id="services" aria-labelledby="services-title">
+    <div class="section-heading"><div><h2 id="services-title">Забота о питомце.<br>Понятные цены<span class="blue-text">.</span></h2></div></div>
+    <div class="service-grid">
+      <article class="service-card card-blue"><div class="card-top"><svg class="service-icon"><use href="#scissors"/></svg></div><h3>Стрижка<br>и красота</h3><p>Комплексный уход для собак<br>Стрижка для кошек</p><strong class="service-price">от 1 500 ₽</strong><button class="service-more" type="button" aria-haspopup="dialog" aria-controls="service-dialog" data-service="haircut" aria-label="Подробнее об уходе за шерстью"><svg><use href="#arrow"/></svg></button></article>
+      <article class="service-card card-green"><div class="card-top"><svg class="service-icon"><use href="#bath"/></svg></div><h3>Чистые лапки.<br>Мягкая шёрстка.</h3><p>Гигиена с помывкой<br>SPA-комплекс</p><strong class="service-price">от 1 600 ₽</strong><button class="service-more" type="button" aria-haspopup="dialog" aria-controls="service-dialog" data-service="bath" aria-label="Подробнее о купании и вычёсывании"><svg><use href="#arrow"/></svg></button></article>
+      <article class="service-card card-cream"><div class="card-top"><svg class="service-icon"><use href="#paw-care"/></svg></div><h3>Забота<br>в деталях</h3><p>Вычёсывание колтунов<br>Уход за полостью рта</p><strong class="service-price">от 1 000 ₽</strong><button class="service-more" type="button" aria-haspopup="dialog" aria-controls="service-dialog" data-service="details" aria-label="Цены на дополнительные услуги"><svg><use href="#arrow"/></svg></button></article>
+    </div>
+    <p class="service-footnote">Выбрать процедуру и записаться можно по телефону <a href="tel:+70000000000">+7 (000) 000-00-00 <span aria-hidden="true">↗</span></a></p>
+  </section>
+  <section class="about-section" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid"><div class="about-art"><div class="about-portrait"><div class="about-rating" aria-label="4,9 из 5 звёзд"><span class="about-rating-value" aria-hidden="true">4,9</span><span class="about-rating-label">звезд</span></div><img src="assets/yorkie.png" alt="Йоркширский терьер с зелёной банданой" loading="lazy" width="1254" height="1254"><div class="about-review-badge" aria-label="124 оценки"><span class="review-badge-copy"><strong>124</strong><span class="review-badge-caption">оценки</span></span></div></div></div><div class="about-copy"><div class="good-place"><svg class="award-mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#brand-mark"/></svg><span><strong>Бережный уход</strong><small>С заботой о каждом питомце</small></span></div><h2 id="about-title">Лапусик.<br>Для тех, кого любим.</h2><p>Уютный зоосалон в центре Москвы. Стрижём, купаем и помогаем заботиться о собаках и кошках.</p><p>Стрижка, экспресс-линька, купание, SPA и гигиенический уход. Подберём процедуры для вашего питомца при записи.</p><div class="about-features"><div><p>По предварительной записи</p></div><div><p>Парковка и велопарковка</p></div><div><p>Wi-Fi для гостей</p></div><div><p>Наличные и банковский перевод</p></div></div><a class="text-link" href="#services">Выбрать уход для питомца <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+  <section class="contacts section wrap" id="contacts" aria-labelledby="contacts-title">
+    <div class="contact-copy"><span class="eyebrow">ДО ВСТРЕЧИ, ХВОСТИК!</span><h2 id="contacts-title">Следующая остановка —<br>красота<span class="blue-text">.</span></h2><p>Запись и вопросы об уходе — по телефону.<br>Пн–пт: 10:00–19:00 · Сб–вс: выходной.</p><a class="phone-link" href="tel:+70000000000">+7 (000) 000-00-00 <span aria-hidden="true">↗</span></a><div class="contact-address"><svg class="outline-icon"><use href="#pin"/></svg><div><strong>Москва, центр</strong><span>Зоосалон «Лапусик» · По предварительной записи</span></div></div><a class="button button-dark" href="https://yandex.ru/maps/?rtext=~55.755814%2C37.617635&amp;rtt=auto" target="_blank" rel="noopener noreferrer">Построить маршрут <span class="button-circle"><svg><use href="#arrow"/></svg></span></a></div>
+    <div class="map-card">
+      <iframe title="Центр Москвы на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=37.617635%2C55.755814&amp;z=14" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <a class="map-source" href="https://yandex.ru/maps/213/moscow/?ll=37.617635%2C55.755814&amp;z=14" target="_blank" rel="noopener noreferrer">Москва, центр <span>Открыть в Яндекс Картах ↗</span></a>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-main wrap">
+      <div class="footer-identity"><a href="#" class="footer-brand" aria-label="Лапусик — на главную"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#brand-mark"/></svg><span>лапусик<span class="brand-dot">.</span></span></a><p>Уход за теми,<br>кого любим.</p></div>
+      <nav class="footer-nav" aria-label="Навигация в подвале"><span class="footer-label">ЗНАКОМЬТЕСЬ С САЛОНОМ</span><a href="#services">Услуги и цены</a><a href="#about">О салоне</a><a href="#contacts">Как нас найти</a></nav>
+      <div class="footer-contacts"><span class="footer-label">ЖДЁМ ВАС И ВАШЕГО ПИТОМЦА</span><a href="tel:+70000000000" class="footer-phone">+7 (000) 000-00-00 ↗</a><p>Москва, центр</p><span>Пн–пт: 10:00–19:00 · Сб–вс: выходной<br>По предварительной записи</span></div>
+    </div>
+    <div class="footer-bottom wrap"><span>Зоосалон «Лапусик»</span><a href="#contacts">Контакты и расположение ↗</a><a class="back-to-top" href="#">Наверх ↑</a></div>
+  </footer>
+  <dialog class="service-dialog" id="service-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Закрыть">×</button><span class="eyebrow">УСЛУГИ САЛОНА</span><h2 id="dialog-title"></h2><div id="dialog-content"></div><a class="button button-dark" href="tel:+70000000000">Позвонить для записи <span aria-hidden="true">↗</span></a></dialog>
+</body>
+</html>
